@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="bg-light" style="padding-top: 70px;">
+    <div class="container py-5">
+      <h1 class="text-center mb-5 text-primary">Panel Principal</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Categorías -->
+        <div class="col">
+          <div class="card h-100 card-hover border-primary">
+            <div class="card-body text-center">
+              <i class="bi bi-tags fs-1 text-primary"></i>
+              <h5 class="card-title mt-3">Categorías</h5>
+              <p class="card-text">Administrar categorías de productos.</p>
+              <RouterLink to="/categories" class="btn btn-outline-primary">Ir</RouterLink>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+<style>
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-</script>
+</style>
