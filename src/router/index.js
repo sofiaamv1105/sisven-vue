@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Categories from '../views/Category.vue'
+import EditarCategory from '../components/Category/EditarCategory.vue'
+import NewCategory from '../components/Category/NewCategory.vue'
 
 const routes = [
   {
