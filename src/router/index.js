@@ -12,6 +12,16 @@ const routes = [
     path: '/categories',
     name: 'Categories',
     component: Categories
+  },
+  {
+    path: '/editar-category/:id',
+    name: 'EditarCategory',
+    component: EditarCategory
+  },
+  {
+    path: '/add-category/',
+    name: 'NewCategory',
+    component: NewCategory
   }
 ]
 
