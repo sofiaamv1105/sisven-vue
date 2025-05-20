@@ -14,10 +14,31 @@
             </div>
           </div>
         </div>
-
+        <!-- Productos -->
+        <div class="col">
+          <div class="card h-100 card-hover border-primary">
+            <div class="card-body text-center">
+              <i class="bi bi-box fs-1 text-primary"></i>
+              <h5 class="card-title mt-3">Productos</h5>
+              <p class="card-text">Administrar productos en el inventario.</p>
+              <RouterLink to="/products" class="btn btn-outline-primary">Ir</RouterLink>
+            </div>
+          </div>
       </div>
+        <!-- Clientes -->
+        <div class="col">
+          <div class="card h-100 card-hover border-primary">
+            <div class="card-body text-center">
+              <i class="bi bi-person fs-1 text-primary"></i>
+              <h5 class="card-title mt-3">Clientes</h5>
+              <p class="card-text">Administrar información de clientes.</p>
+              <RouterLink to="/customers" class="btn btn-outline-primary">Ir</RouterLink>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+</div>
 </template>
 
 <style>

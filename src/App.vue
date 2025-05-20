@@ -1,7 +1,8 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/categories">Category</router-link>
+    <router-link to="/">Inicio</router-link> |
+    <router-link to="/categories">Categorias</router-link> |
+    <router-link to="/customers">Clientes</router-link>
   </nav>
   <router-view/>
 </template>

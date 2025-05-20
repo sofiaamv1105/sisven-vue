@@ -1,6 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Categories from '../views/Category.vue'
+import Customers from '../views/Customer.vue'
+import NewCustomer from '../components/Customer/NewCustomer.vue'
+import EditarCustomer from '../components/Customer/EditarCustomer.vue'
 import EditarCategory from '../components/Category/EditarCategory.vue'
 import NewCategory from '../components/Category/NewCategory.vue'
 
@@ -24,7 +27,22 @@ const routes = [
     path: '/add-category/',
     name: 'NewCategory',
     component: NewCategory
-  }
+  },
+  {
+    path: '/customers',
+    name: 'Customers',
+    component: Customers
+  },
+  {
+    path: '/add-customer/',
+    name: 'NewCustomer',
+    component: NewCustomer
+  },
+  {
+    path: '/customers/:id/edit',
+    name: 'EditarCustomer',
+    component: EditarCustomer
+  },
 ]
 
 const router = createRouter({
