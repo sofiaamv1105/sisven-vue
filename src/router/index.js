@@ -8,6 +8,7 @@ import EditarCustomer from '../components/Customer/EditarCustomer.vue'
 import EditarCategory from '../components/Category/EditarCategory.vue'
 import NewCategory from '../components/Category/NewCategory.vue'
 import NewProduct from '../components/Product/NewProduct.vue'
+import EditarProduct from '../components/Product/EditarProduct.vue'
 
 const routes = [
   {
@@ -55,6 +56,11 @@ const routes = [
     name: 'NewProduct',
     component: NewProduct
   },
+  {
+    path: '/products/:id/edit',
+    name: 'EditarProduct',
+    component: EditarProduct
+  }
 ]
 
 const router = createRouter({
