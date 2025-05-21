@@ -10,6 +10,7 @@ import EditarCategory from '../components/Category/EditarCategory.vue'
 import NewCategory from '../components/Category/NewCategory.vue'
 import NewProduct from '../components/Product/NewProduct.vue'
 import EditarProduct from '../components/Product/EditarProduct.vue'
+import NewPayMode from '../components/PayMode/NewPayMode.vue'
 
 const routes = [
   {
@@ -66,7 +67,12 @@ const routes = [
     path: '/paymodes',
     name: 'PayModes',
     component: PayModes
-  }
+  },
+  {
+    path: '/add-paymode/',
+    name: 'NewPayMode',
+    component: NewPayMode
+  },
 ]
 
 const router = createRouter({
