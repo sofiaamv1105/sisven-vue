@@ -36,6 +36,17 @@
             </div>
           </div>
         </div>
+        <!-- Metodos de Pago -->
+        <div class="col">
+          <div class="card h-100 card-hover border-primary">
+            <div class="card-body text-center">
+              <i class="bi bi-cart fs-1 text-primary"></i>
+              <h5 class="card-title mt-3">Métodos de Pago</h5>
+              <p class="card-text">Administrar métodos de pago.</p>
+              <RouterLink to="/paymodes" class="btn btn-outline-primary">Ir</RouterLink>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </div>

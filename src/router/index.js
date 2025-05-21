@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Categories from '../views/Category.vue'
 import Customers from '../views/Customer.vue'
 import Products from '../views/Product.vue'
+import PayModes from '@/views/PayMode.vue'
 import NewCustomer from '../components/Customer/NewCustomer.vue'
 import EditarCustomer from '../components/Customer/EditarCustomer.vue'
 import EditarCategory from '../components/Category/EditarCategory.vue'
@@ -60,6 +61,11 @@ const routes = [
     path: '/products/:id/edit',
     name: 'EditarProduct',
     component: EditarProduct
+  },
+  {
+    path: '/paymodes',
+    name: 'PayModes',
+    component: PayModes
   }
 ]
 
